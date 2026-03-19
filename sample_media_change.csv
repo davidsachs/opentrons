@@ -1,0 +1,33 @@
+#Starting reagent locations
+A1_tube,activin_a
+A2_tube,bmp4
+A3_tube,fgf
+A4_tube,chir
+A5_tube,ascorbic_acid
+#Plate layout
+A1_plate,activin_a,1,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+B1_plate,activin_a,1,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+C1_plate,activin_a,2,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+D1_plate,activin_a,2,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+E1_plate,activin_a,3,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+F1_plate,activin_a,3,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+G1_plate,activin_a,4,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+H1_plate,activin_a,4,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+A2_plate,activin_a,1,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+B2_plate,activin_a,1,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+C2_plate,activin_a,2,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+D2_plate,activin_a,2,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+E2_plate,activin_a,3,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+F2_plate,activin_a,3,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+G2_plate,activin_a,4,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+H2_plate,activin_a,4,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+A3_plate,activin_a,1,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+B3_plate,activin_a,1,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+C3_plate,activin_a,2,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+D3_plate,activin_a,2,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+E3_plate,activin_a,3,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+F3_plate,activin_a,3,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+G3_plate,activin_a,4,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+H3_plate,activin_a,4,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+
+

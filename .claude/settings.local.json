@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(wc:*)",
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(python:*)",
+      "Bash(curl:*)",
+      "Bash(del \"c:\\\\Users\\\\David Sachs\\\\Documents\\\\opentrons_api\\\\test_visualizer.py\")",
+      "Bash(find . -name \"*.py\" -type f -exec grep -l \"labware_offset\" {})"
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+#=============================================================================
+# MEDIA CHANGE CSV TEMPLATE
+#
+# This file defines the reagent layout for spheroid media change protocols.
+# Edit this file and upload with Ctrl+U in the GUI.
+#=============================================================================
+
+#-----------------------------------------------------------------------------
+# SECTION 1: REAGENT TUBE LOCATIONS
+# Format: WELL_tube,reagent_name
+#
+# The tube rack is a 24-tube rack with wells A1-A6, B1-B6, C1-C6, D1-D6
+# Place your reagent tubes in the specified wells.
+#-----------------------------------------------------------------------------
+A1_tube,activin_a
+A2_tube,bmp4
+A3_tube,fgf
+A4_tube,chir
+A5_tube,ascorbic_acid
+
+#-----------------------------------------------------------------------------
+# SECTION 2: PLATE LAYOUT
+# Format: WELL_plate,reagent1,volume1,reagent2,volume2,...
+#
+# Define which reagents (and volumes in µL) go into each well.
+# The 96-well plate has wells A1-H12.
+# Volumes are typically 1-10 µL per reagent.
+#
+# Example: A1_plate,activin_a,2,bmp4,1 means:
+#   - Well A1 gets 2µL of activin_a and 1µL of bmp4
+#-----------------------------------------------------------------------------
+
+# Column 1 - Varying activin_a (1-4µL)
+A1_plate,activin_a,1,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+B1_plate,activin_a,1,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+C1_plate,activin_a,2,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+D1_plate,activin_a,2,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+E1_plate,activin_a,3,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+F1_plate,activin_a,3,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+G1_plate,activin_a,4,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+H1_plate,activin_a,4,bmp4,1,chir,1,ascorbic_acid,1,fgf,1
+
+# Column 2 - Varying bmp4 (1-4µL)
+A2_plate,activin_a,1,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+B2_plate,activin_a,1,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+C2_plate,activin_a,2,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+D2_plate,activin_a,2,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+E2_plate,activin_a,3,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+F2_plate,activin_a,3,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+G2_plate,activin_a,4,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+H2_plate,activin_a,4,bmp4,2,chir,1,ascorbic_acid,1,fgf,1
+
+# Column 3 - Higher bmp4 concentrations
+A3_plate,activin_a,1,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+B3_plate,activin_a,1,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+C3_plate,activin_a,2,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+D3_plate,activin_a,2,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+E3_plate,activin_a,3,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+F3_plate,activin_a,3,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+G3_plate,activin_a,4,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
+H3_plate,activin_a,4,bmp4,3,chir,1,ascorbic_acid,1,fgf,1
