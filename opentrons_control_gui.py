@@ -2200,13 +2200,32 @@ class OT3ControlGUI:
                                 # Store the offset override - find the labware_id for this slot
                                 labware_info = self.deck_visualizer.labware.get(slot)
                                 if labware_info and labware_info.id:
+                                    # Find the first well the protocol uses for this labware
+                                    # to use as baseline for relative offset mode
+                                    baseline_row = 0
+                                    baseline_col = 0
+                                    real_labware_id = labware_info.id
+                                    for pcmd in self.protocol_commands:
+                                        pcmd_labware = pcmd.get("params", {}).get("labwareId", "")
+                                        # Check both real ID and any sim ID that maps to it
+                                        maps_to_this = (pcmd_labware == real_labware_id or
+                                                        self.id_map.get(pcmd_labware) == real_labware_id)
+                                        if maps_to_this and pcmd.get("commandType") in ("aspirate", "dispense", "moveToWell", "blowout"):
+                                            first_well = pcmd.get("params", {}).get("wellName", "A1")
+                                            baseline_row = ord(first_well[0].upper()) - ord('A')
+                                            baseline_col = int(first_well[1:]) - 1
+                                            break
+
                                     self.plate_offset_overrides[labware_info.id] = {
                                         'columns': col,
                                         'rows': row,
                                         'slot': slot,
-                                        'direct': True  # Direct mode for interactive well selection
+                                        'direct': False,  # Relative mode: maintains well-to-well offsets
+                                        'baseline_col': baseline_col,
+                                        'baseline_row': baseline_row
                                     }
-                                    print(f"  Stored plate override for labware_id: {labware_info.id} (direct mode)")
+                                    baseline_well = f"{chr(ord('A') + baseline_row)}{baseline_col + 1}"
+                                    print(f"  Stored plate override for labware_id: {labware_info.id} (relative mode, baseline={baseline_well})")
 
                 if not clicked_on_item:
                     # Forward to deck visualizer for labware dragging
